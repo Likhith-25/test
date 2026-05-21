@@ -1,4 +1,4 @@
-FROM eclipse-temurin:17-jdk-jammy
+FROM python:3.10-slim
 WORKDIR /web-app
 COPY . .
 RUN pip install flask
