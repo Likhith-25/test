@@ -13,7 +13,7 @@ pipeline {
         }
         stage("Build") {
             steps {
-                sh 'pip install --user flask'
+                sh 'pip install -r requirements.txt'
             }
         }
         stage("Run") {
