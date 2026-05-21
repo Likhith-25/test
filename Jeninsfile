@@ -6,19 +6,19 @@ stages
 stage("Clone git")
 {
 steps{
-git "https://github.com/Likhith-25/test.git"
+git 'https://github.com/Likhith-25/test.git'
 }
 }
 stage("Build")
 {
 steps{
-sh "pip install flask"
+sh 'pip install flask'
 }
 }
 stage("Run")
 {
 steps{
-sh "python3 appp.py"
+sh 'python3 appp.py'
 }
 }
 }
